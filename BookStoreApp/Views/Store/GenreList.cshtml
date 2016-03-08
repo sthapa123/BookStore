@@ -1,12 +1,14 @@
 ﻿@model IEnumerable<BookStoreApp.Repository.Models.Genres>
 @{
-    ViewBag.Title = "GenreList";
+	ViewBag.Title = "GenreList";
 }
+<div class="col-lg-2">
+	<h2>GenreList</h2>
+	<ul>
+		@foreach (var item in Model)
+			{
+			<li>@Html.ActionLink(item.Name, "Browse", "Store", new { genre = item.Name }, null)</li>
+			}
+	</ul>
+</div>
 
-<h2>GenreList</h2>
-<ul>
-	@foreach (var item in Model)
-	{
-		<li>@item.Name</li>
-	}
-</ul>

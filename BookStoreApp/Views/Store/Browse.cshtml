@@ -1,0 +1,14 @@
+﻿@model IEnumerable<BookStoreApp.Repository.Models.Books>
+@{
+    ViewBag.Title = "Browse";
+}
+
+<h1>Browse</h1>
+<div class="row">
+	@foreach (var item in Model)
+	{
+		<div class="col-lg-3">
+			<p>@item.Title</p>
+		</div>
+	}
+</div>

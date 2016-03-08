@@ -13,9 +13,9 @@ namespace BookStoreApp.Repository.Implementation
 	{
 		private BookStoreContext db = new BookStoreContext();
 
-		public async Task<IEnumerable<Books>> GetBooks()
+		public async Task<IEnumerable<Books>> GetBooks(string genre)
 		{
-			return await db.Book.ToListAsync();
+			return await db.Book.Where(r=>r.Genre.Name==genre).ToListAsync();
 		}
 		public IEnumerable<Genres> GetGenres()
 		{

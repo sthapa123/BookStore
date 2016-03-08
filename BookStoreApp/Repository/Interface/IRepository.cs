@@ -9,7 +9,7 @@ namespace BookStoreApp.Repository.Interface
 {
 	public interface IRepository
 	{
-		Task<IEnumerable<Books>> GetBooks();
+		Task<IEnumerable<Books>> GetBooks(string genre);
 		IEnumerable<Genres> GetGenres();
 
 	}

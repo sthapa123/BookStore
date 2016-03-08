@@ -15,10 +15,9 @@ namespace BookStoreApp.Controllers
 		{
 			this.repo = _repo;
 		}
-		public async Task<ActionResult> Index()
+		public ActionResult Index()
 		{
-			var books = await repo.GetBooks();
-			return View(books);
+			return View();
 		}
 	}
 }
