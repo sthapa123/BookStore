@@ -2,23 +2,22 @@
 using System;
 using System.Collections.Generic;
 using System.Linq;
-using System.Threading.Tasks;
 using System.Web;
 using System.Web.Mvc;
 
 namespace BookStoreApp.Controllers
 {
-	public class HomeController : Controller
-	{
+    public class StoreController : Controller
+    {
 		private IRepository repo;
-		public HomeController(IRepository _repo)
+		public StoreController(IRepository _repo)
 		{
 			this.repo = _repo;
 		}
-		public async Task<ActionResult> Index()
-		{
-			var books = await repo.GetBooks();
-			return View(books);
-		}
-	}
+        // GET: Store
+        public ActionResult Index()
+        {
+            return View();
+        }
+    }
 }
