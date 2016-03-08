@@ -2,13 +2,13 @@
 @{
 	ViewBag.Title = "GenreList";
 }
-<div class="col-lg-2">
-	<h2>GenreList</h2>
-	<ul>
-		@foreach (var item in Model)
-			{
-			<li>@Html.ActionLink(item.Name, "Browse", "Store", new { genre = item.Name }, null)</li>
-			}
-	</ul>
+
+<div class="col-lg-3" style="height:500px;">
+    <h1 style="font-size:20px;margin-left: 22px;">Genre List</h1>
+        <ul>
+            @foreach (var item in Model)
+            {
+                <li>@Html.ActionLink(item.Name, "Browse", "Store", new { genre = item.Name }, null)</li>}
+        </ul>
 </div>
 
