@@ -7,11 +7,12 @@ using System.Threading.Tasks;
 
 namespace BookStoreApp.Repository.Models
 {
-	public class Genres
+	public class Genres:ModelBase
 	{
 		[Required]
 		[Key]
 		public int GenreId { get; set; }
+    	[Required(ErrorMessage ="Genre is not be null")]
 		public string Name { get; set; }
 		[StringLength(100)]
 		public string Description { get; set; }

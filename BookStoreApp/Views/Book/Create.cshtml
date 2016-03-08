@@ -1,0 +1,40 @@
+﻿
+<div class="span3">
+	<h2>Add Book</h2>
+	@using (Html.BeginForm("Index", "Book", "post"))
+	{
+		<label>Book Title</label>
+		@Html.TextBox("Title", null,
+		new
+		{
+			@class = "form-control"
+		})
+		<label>Author Name</label>
+			@Html.TextBox("Author", null,
+		new
+		{
+			@class = "form-control"
+		})
+			<label>Genre Name</label>
+			@Html.TextBox("Genre", null,
+		new
+		{
+			@class = "form-control"
+		})
+			<label>Book Price</label>
+			@Html.TextBox("Price", null,
+		new
+		{
+			@class = "form-control"
+		})
+			<label>Book Url</label>
+			@Html.TextBox("Url", null,
+		new
+		{
+			@class = "form-control"
+		})
+			<button type="submit" class="btn btn-success btn-lg btn3d" style="margin-top: 18px;min-width: 25%;">
+				<span class="glyphicon glyphicon-ok"></span> Add Book
+			</button>
+	}
+</div>

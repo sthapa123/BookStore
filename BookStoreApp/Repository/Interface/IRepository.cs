@@ -11,6 +11,7 @@ namespace BookStoreApp.Repository.Interface
 	{
 		Task<IEnumerable<Books>> GetBooks(string genre);
 		IEnumerable<Genres> GetGenres();
+		Task<bool> AddBook(Books books);
 
 	}
 }

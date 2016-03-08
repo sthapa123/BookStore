@@ -7,7 +7,7 @@ using System.Threading.Tasks;
 
 namespace BookStoreApp.Repository.Models
 {
-	public class OrderDetails
+	public class OrderDetails:ModelBase
 	{
 		[Key]
 		public int OrderDetailId { get; set; }

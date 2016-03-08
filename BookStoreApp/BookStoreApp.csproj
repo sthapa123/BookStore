@@ -186,6 +186,7 @@
     <Compile Include="App_Start\RouteConfig.cs" />
     <Compile Include="App_Start\Startup.Auth.cs" />
     <Compile Include="Controllers\AccountController.cs" />
+    <Compile Include="Controllers\BookController.cs" />
     <Compile Include="Controllers\HomeController.cs" />
     <Compile Include="Controllers\ManageController.cs" />
     <Compile Include="Controllers\StoreController.cs" />
@@ -204,6 +205,7 @@
     <Compile Include="Repository\Models\BookStoreContext.cs" />
     <Compile Include="Repository\Models\Carts.cs" />
     <Compile Include="Repository\Models\Genres.cs" />
+    <Compile Include="Repository\Models\ModelBase.cs" />
     <Compile Include="Repository\Models\OrderDetails.cs" />
     <Compile Include="Repository\Models\Orders.cs" />
     <Compile Include="Startup.cs" />
@@ -264,6 +266,8 @@
     <Content Include="Views\Store\Index.cshtml" />
     <Content Include="Views\Store\GenreList.cshtml" />
     <Content Include="Views\Store\Browse.cshtml" />
+    <Content Include="Views\Book\Index.cshtml" />
+    <Content Include="Views\Book\Create.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />

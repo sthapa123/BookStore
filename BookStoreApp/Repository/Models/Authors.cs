@@ -7,11 +7,12 @@ using System.Threading.Tasks;
 
 namespace BookStoreApp.Repository.Models
 {
-	public class Authors
+	public class Authors:ModelBase
 	{
 		[Required]
 		[Key]
 		public int AuthorId { get; set; }
+		[Required(ErrorMessage ="Author is not be null")]
 		public string Name { get; set; }
 	}
 }

@@ -8,7 +8,7 @@ using System.Threading.Tasks;
 
 namespace BookStoreApp.Repository.Models
 {
-	public class Orders
+	public class Orders:ModelBase
 	{
 		[ScaffoldColumn(false)]
 		[Key]

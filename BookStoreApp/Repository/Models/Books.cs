@@ -8,7 +8,7 @@ using System.Threading.Tasks;
 
 namespace BookStoreApp.Repository.Models
 {
-	public class Books
+	public class Books:ModelBase
 	{
 		[ScaffoldColumn(false)]//Düzenlenmesini istemediğimiz model özelliği için kullanılır. Böylece bu alan EditorForModel kullandığımızda gizlenecektir. 
 		[Key]
