@@ -2,13 +2,13 @@
 @{
     ViewBag.Title = "Browse";
 }
-
-<h1>Browse</h1>
 <div class="row">
 	@foreach (var item in Model)
-	{
-		<div class="col-lg-3">
-			<p>@item.Title</p>
+    {
+        <h1 style="font-size: 20px;">Books by genre : @item.Genre.Name</h1>
+		<div class="col-lg-2">
+            <img src="https://upload.wikimedia.org/wikipedia/en/c/c9/Son_by_Lois_Lowry.jpg" style="height:250px;" alt="Son" title="Son">
+			<p style="text-align:center;"><strong>@item.Title</strong></p>
 		</div>
 	}
 </div>
