@@ -1,0 +1,12 @@
+﻿@model IEnumerable<BookStoreApp.Repository.Models.Genres>
+@{
+    ViewBag.Title = "GenreList";
+}
+
+<h2>GenreList</h2>
+<ul>
+	@foreach (var item in Model)
+	{
+		<li>@item.Name</li>
+	}
+</ul>

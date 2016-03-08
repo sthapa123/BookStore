@@ -10,5 +10,7 @@ namespace BookStoreApp.Repository.Interface
 	public interface IRepository
 	{
 		Task<IEnumerable<Books>> GetBooks();
+		IEnumerable<Genres> GetGenres();
+
 	}
 }

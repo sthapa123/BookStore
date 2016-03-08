@@ -17,5 +17,9 @@ namespace BookStoreApp.Repository.Implementation
 		{
 			return await db.Book.ToListAsync();
 		}
+		public IEnumerable<Genres> GetGenres()
+		{
+			return db.Genre.ToList();
+		}
 	}
 }

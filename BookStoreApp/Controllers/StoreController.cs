@@ -19,5 +19,10 @@ namespace BookStoreApp.Controllers
         {
             return View();
         }
+		public ActionResult GenreList()
+		{
+			var genres = repo.GetGenres();//this method is not using async because Child Action is not supported async
+			return PartialView(genres);
+		}
     }
 }
